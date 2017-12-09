@@ -1,0 +1,52 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #141311;
+}
+
+.close {
+    right: 0;
+    width: 60px;
+}
+
+.maximize {
+    right: 60px;
+    width: 60px;
+}
+
+.minimize {
+    right: 120px;
+    width: 60px;
+}
+
+.titlebar {
+    position: absolute;
+    top: 0;
+    width: calc(100vw - 180px);
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+}
+
+.titlebar-button * {
+    font-size: 20px !important;
+}
+
+.titlebar-button {
+    position: absolute;
+    top: 0;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.titlebar-button:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
