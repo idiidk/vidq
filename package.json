@@ -1,0 +1,10 @@
+{
+  "name": "vidq",
+  "version": "0.1.1",
+  "description": "A peer to peer video service.",
+  "main": "client.js",
+  "repository": "https://github.com/idiidk/vidq.git",
+  "author": "Vincent Brouwer (idiidk)",
+  "license": "MIT",
+  "private": false
+}
