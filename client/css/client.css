@@ -1,8 +1,62 @@
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
 html,
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
     background-color: #141311;
+    overflow-x: hidden;
+}
+
+.content {
+    padding-top: 3.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    word-wrap: break-word;
+    transition: all 0.2s;
+    color: white;
+}
+
+.content.titlebar-underlay {
+    height: 100vh;
+    margin-top: 0;
+}
+
+.titlebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: calc(100vw - 190px);
+    height: 5vh;
+    padding-left: 10px;
+    -webkit-user-select: none;
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+    align-items: center;
+    -webkit-app-region: drag;
+}
+
+.titlebar-button * {
+    font-size: 20px !important;
+}
+
+.titlebar-button {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 5vh;
+    cursor: pointer;
+    transition: all .2s;
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+    align-items: center;
+    justify-content: center;
+}
+
+.titlebar-button:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .close {
@@ -20,33 +74,6 @@ body {
     width: 60px;
 }
 
-.titlebar {
-    position: absolute;
-    top: 0;
-    width: calc(100vw - 180px);
-    height: 5vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    -webkit-app-region: drag;
-    -webkit-user-select: none;
-}
-
-.titlebar-button * {
-    font-size: 20px !important;
-}
-
-.titlebar-button {
-    position: absolute;
-    top: 0;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.titlebar-button:hover {
-    background-color: rgba(0, 0, 0, 0);
+::-webkit-scrollbar {
+    display: none;
 }
