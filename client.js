@@ -3,6 +3,8 @@ const path = require("path");
 const url = require("url");
 const clientPath = "./client";
 
+require("electron-reload")(path.join(__dirname, clientPath));
+
 let win;
 
 function createWindow() {
@@ -18,7 +20,7 @@ function createWindow() {
     }));
 
     win.webContents.openDevTools()
-
+    
     win.on("closed", () => {
         win = null;
     });

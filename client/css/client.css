@@ -1,79 +1,157 @@
-* {
-    font-family: "Work Sans", sans-serif;
+*
+{
+    font-family: 'Work Sans', sans-serif;
 }
 
 html,
-body {
+body
+{
+    overflow-x: hidden;
+
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
+
     background-color: #141311;
-    overflow-x: hidden;
 }
 
-.content {
+.content
+{
     padding-top: 3.5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+
+    transition: all .2s;
     word-wrap: break-word;
-    transition: all 0.2s;
+
     color: white;
 }
 
-.content.titlebar-underlay {
-    height: 100vh;
+.content
+{
+    padding: 2vw;
+}
+
+.videolist
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.video-item
+{
+    align-self: auto;
+    flex: 1 1 40%;
+
+    max-width: calc(50% - 12px);
+    margin: 6px;
+
+    background-color: rgba(0, 0, 0, .20);
+}
+
+.video-item .thumbnail
+{
+    width: 100%;
+}
+
+.video-item .info
+{
+    padding: 20px;
+    padding-top: 0;
+}
+
+.video-item .info .title
+{
+    font-size: 20px;
+
+    margin-bottom: 0;
+}
+
+.video-item .info .description
+{
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+.video-item .info .date
+{
+    font-size: 13px;
+
     margin-top: 0;
 }
 
-.titlebar {
+.titlebar-filter
+{
     position: fixed;
     top: 0;
+
+    width: 100vw;
+    height: 5vh;
+}
+
+.titlebar
+{
+    position: fixed;
+    top: 0;
+
     display: flex;
-    width: calc(100vw - 190px);
+    align-items: center;
+
+    width: calc(100vw - 130px);
     height: 5vh;
     padding-left: 10px;
+
     -webkit-user-select: none;
+            user-select: none;
+
     color: white;
-    background-color: rgba(0, 0, 0, .2);
-    align-items: center;
+
     -webkit-app-region: drag;
 }
 
-.titlebar-button * {
+.titlebar-button *
+{
     font-size: 20px !important;
 }
 
-.titlebar-button {
+.titlebar-button
+{
     position: fixed;
     top: 0;
+
     display: flex;
-    height: 5vh;
-    cursor: pointer;
-    transition: all .2s;
-    color: white;
-    background-color: rgba(0, 0, 0, .2);
     align-items: center;
     justify-content: center;
+
+    height: 5vh;
+
+    cursor: pointer;
+    transition: all .2s;
+
+    color: white;
 }
 
-.titlebar-button:hover {
-    background-color: rgba(0, 0, 0, 0);
+.titlebar-button:hover
+{
+    background-color: rgba(255, 255, 255, .075);
 }
 
-.close {
+.close
+{
     right: 0;
+
     width: 60px;
 }
 
-.maximize {
+.minimize
+{
     right: 60px;
+
     width: 60px;
 }
 
-.minimize {
-    right: 120px;
-    width: 60px;
-}
-
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
     display: none;
 }
