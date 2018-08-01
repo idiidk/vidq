@@ -1,175 +1,130 @@
-*
-{
+* {
     font-family: 'Work Sans', sans-serif;
 }
 
 html,
-body
-{
+body {
     overflow-x: hidden;
-
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-
     background-color: #141311;
 }
 
-.content
-{
+.content {
     padding-top: 3.5vh;
-
     transition: all .2s;
     word-wrap: break-word;
-
     color: white;
 }
 
-.content
-{
+.content {
     padding: 2vw;
 }
 
-.videolist
-{
+.video-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.video-item
-{
+.video-item {
     align-self: auto;
     flex: 1 1 40%;
-
     max-width: calc(50% - 12px);
     margin: 6px;
-
     transition: all .5s;
-
     border-radius: 3.5px;
-    -webkit-box-shadow: 0 0 14px -2px rgba(0, 0, 0, .75);
-       -moz-box-shadow: 0 0 14px -2px rgba(0, 0, 0, .75);
-            box-shadow: 0 0 14px -2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.75);
 }
 
-.video-item .thumbnail
-{
+.video-item .thumbnail {
     display: block;
-
     width: 100%;
     height: auto;
-
     transition: all .5s;
-
     border-top-left-radius: 3.5px;
     border-top-right-radius: 3.5px;
 }
 
-.video-item .info
-{
+.video-item .info {
     padding: 10px;
     padding-top: 0;
 }
 
-.video-item .info .title
-{
+.video-item .info .title {
     font-size: 20px;
-
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-.video-item .info .description
-{
+.video-item .info .description {
     font-size: 15px;
-
     margin-bottom: 5px;
 }
 
-.video-item .info .date
-{
+.video-item .info .date {
     font-size: 13px;
-
     margin-top: 0;
 }
 
-.titlebar-filter
-{
+.titlebar-filter {
     position: fixed;
     top: 0;
-
     width: 100vw;
     height: 5vh;
-
-    -webkit-box-shadow: 0 0 14px -2px rgba(0, 0, 0, .75);
-       -moz-box-shadow: 0 0 14px -2px rgba(0, 0, 0, .75);
-            box-shadow: 0 0 14px -2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.75);
 }
 
-.titlebar
-{
+.titlebar {
     position: fixed;
     top: 0;
-
     display: flex;
     align-items: center;
-
     width: calc(100vw - 130px);
-    height: 5vh;
+    height: 280px;
     padding-left: 10px;
-
     -webkit-user-select: none;
-            user-select: none;
-
+    user-select: none;
     color: white;
-
     -webkit-app-region: drag;
 }
 
-.titlebar-button *
-{
+.titlebar-button * {
     font-size: 20px !important;
 }
 
-.titlebar-button
-{
+.titlebar-button {
     position: fixed;
     top: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 5vh;
-
     cursor: pointer;
     transition: all .2s;
-
     color: white;
 }
 
-.titlebar-button:hover
-{
-    background-color: rgba(255, 255, 255, .075);
+.titlebar-button:hover {
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
-.close
-{
+.close {
     right: 0;
-
     width: 60px;
 }
 
-.minimize
-{
+.minimize {
     right: 60px;
-
     width: 60px;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
     display: none;
 }
